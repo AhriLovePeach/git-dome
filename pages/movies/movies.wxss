@@ -1,0 +1,34 @@
+/* pages/posts/movies/movies.wxss */
+@import "movie-list/movie-list-template.wxss";
+@import "more-grid/more-grid-template.wxss";
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20rpx 25rpx;
+    margin-bottom: 20rpx;
+    background-color: #f2f2f2;
+}
+
+.placeholder {
+    width: 560rpx;
+    margin: 0 40rpx;
+    font-size: 28rpx;
+}
+
+.container {
+    background-color: #f2f2f2;
+}
+.movies-container {
+    height: auto;
+}
+.movie-container {
+    float: left;
+    margin-bottom: 30rpx;
+}
+
+/* .search image {
+    width: 30rpx;
+    height: 30rpx;
+} */

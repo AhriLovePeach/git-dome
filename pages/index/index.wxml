@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class='container'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+        <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+        <text class='user-name'>Hello {{userInfo.nickName}}</text>
+    </block>
+    <view class='moto-container' bindtap='toTap'>
+        <text class='moto'>开启小奶狗养成之旅</text>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+/* pages/movies/more-movie/more-movie.wxss */
+@import "../more-grid/more-grid-template.wxss";
+.movies-container {
+    margin: 40rpx  8rpx 0;
+}
+.movie-container {
+    float: left;
+    margin-bottom: 30rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/posts/movies/movies.wxml-->
+<import src="./movie-list/movie-list-template.wxml" />
+<import src="./more-grid/more-grid-template.wxml" />
+<view class='search'>
+    <icon class='search-img' type="search" size='13'></icon>
+    <input placeholder="复仇者联盟3,策反" class="placeholder" bindfocus='onBindFocus' bindblur='onBindBlur'>
+    </input>
+    <icon class='search-img' type="clear" size='16' catchtap='onCancelImgTap' wx:if="{{searchPanelShow}}"></icon>
+    <!-- <image src='/images/icon/xx.png' catchtap='onCancelImgTap' /> -->
+</view>
+ <view class='container' wx:if="{{containerShow}}">
+    <template is="movieListTemplate" data="{{...inTheaters}}" />
+    <template is="movieListTemplate" data="{{...comingSoon}}" />
+    <template is="movieListTemplate" data="{{...top250}}" />
+</view> 
+<view class='search-panel' wx:if="{{searchPanelShow}}">
+    <template is="moreGridTemplate" data="{{...searchMovies}}" />
+</view>

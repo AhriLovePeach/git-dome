@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "欢迎页面",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+}

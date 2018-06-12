@@ -1,0 +1,9 @@
+<!--pages/movies/more-grid/more-grid-template.wxml-->
+<import src="../movie/movie-template.wxml" />
+<template name="moreGridTemplate">
+    <scroll-view class='movies-container' scroll-y="true" bindscrolltolower="onScrolltoLower">
+        <block wx:for="{{movies}}" wx:for-item="moviegrid">
+            <template is="movieTemplate" data="{{...moviegrid}}" />
+        </block>
+    </scroll-view>
+</template>
