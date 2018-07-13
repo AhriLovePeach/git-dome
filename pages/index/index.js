@@ -64,7 +64,7 @@ Page({
         //     url: '../posts/post',
         //     success: function(res) {},
         //     fail: function(res) {},
-        //     complete: function(res) {},s
+        //     complete: function(res) {},
         // });
 
         // wx.redirectTo({
